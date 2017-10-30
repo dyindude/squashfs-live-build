@@ -1,0 +1,12 @@
+- build script to set up initial system
+  - prompt for root password, hostname, etc
+- MBR support
+- live USB image others can use to bootstrap initial install on thumb drive
+  - so we can support users not already starting from Linux...
+  - helper scripts to set up common drivers (nvidia/wireless etc)
+- Where to store/sync /home? could be another partition on thumb drive, or ramdisk sync to cloud storage
+- rewrite everything as ansible playbooks?
+- maybe some configs for various kinds of local storage (e.g. we could keep a persistent Steam library,downloads/home folder on an SSD, etc)
+- figure out kernel package update workflow. Syslinux.cfg needs to get updated
+- automating creation of GUID partition table?
+- need way of templating/generating syslinux.cfg..ansible starting to look like an ok job for this too
